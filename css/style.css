@@ -12,8 +12,66 @@ p.vert {
     color: green
 }
 .vt{
-    color: green;
+    color: rgb(101, 52, 214);
 }
 .bord{
-    border: 1px solid green;
+    border: 5px solid rgb(179, 25, 76) ;
 }
+a
+{color:red;text-decoration:none;}
+a:hover
+{
+color:green;text-decoration:underline;}
+a:visted
+{
+color:grey;}
+.design{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: tomato;
+}
+.mycolor
+{
+    text-align: center;
+    color: darkred;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+
+}
+.transparent
+{
+    background-color: rgba(255, 0,0, 0.6);
+   
+}
+.opacity
+{
+    opacity: 0.8;
+}
+.image
+{
+    background-image: url("../image/isg.gif");
+}
+.bordure
+{
+    border-style: dashed;
+    border-width: 50px;
+    border-color: blue;
+    border: left ;
+}
+.dim
+{
+    height: 90px;
+    width: 50%;
+    margin-left: 60px;
+  
+}
+ul
+{
+    list-style-image: url(../image/formalab.png);
+
+}
+
