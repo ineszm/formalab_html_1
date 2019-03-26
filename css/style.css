@@ -74,4 +74,15 @@ ul
     list-style-image: url(../image/formalab.png);
 
 }
-
+.formation
+{
+    color: chocolate;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+}
+.couleur
+{
+    background-color: #ff6600;
+    
+}
