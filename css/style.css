@@ -81,8 +81,23 @@ ul
     font-size: 50px;
     font-style: italic;
 }
-.couleur
-{
+body{ 
+    margin:0px; 
+    } 
+#header
+{ height:500px; 
     background-color: #ff6600;
-    
+
+}
+
+#body
+{
+    color: red;
+    text-align: left;
+    font-size: 60px;
+    font-style: italic;
+}
+#footer
+{height:500px; 
+    background-color: #4c4c4c;
 }
