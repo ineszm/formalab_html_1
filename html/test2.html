@@ -2,48 +2,89 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>TITRE2</title>
-        
+        <title>TEST2</title>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     </head>
-    <body>
+    <body class="color">
 
-     <table>
+     <table class="table">
 
   <thead>
 
     <tr>
-        <th>NOM</th>
+        <th class="p">NOM</th>
     </tr>
   </thead>
   <tfoot>
-      <tr><th>Nom</th></tr>
+      <tr><th class="p">Nom</th></tr>
   </tfoot>
 <tbody>
-    <tr><td>Formalab</td></tr>
+    <tr><td class="p">Formalab</td></tr>
 </tbody>
  </table>
  <hr>
- <form name ="ines" method="" action="">
-    <label for ="nom:">entrer votre nom:</label>
-     <input type="text" name="Nom:"  required id="nom"/>
+ <form name ="ines" method="GET" action="../php/test2.php">
+    <label for ="nom:" class="label">Entrer votre nom:</label>
+     <input type="text" name="Nom:"  required id="nom" class="form-control"/>
      <br/>
      <br/>
-     <label for="mdp">   entrer mdp :     </label>
-     <input type="password" name="mdp" required id="mdp" />
+     <label for="mdp" class="label">   Entrer Mdp :     </label>
+     <input type="password" name="mdp1" required id="mdp" class="form-control" />
  <br/>
  <br/>
- <input type="checkbox" value="=php" checked>PHP <br/>
- <input type="checkbox" value="=java" >JAVA <br/>
- <input type="checkbox" value="=html" checked>HTML <br/>
- <input type="checkbox" value="=css" >CSS <br/>
- <input type="checkbox" value="=bootstrap" checked>BOOTSTRAP <br/>
+ <div class="form-check">
+    <div class="col-sm-10">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <label class="form-check-label1" for="defaultCheck1" >
+    PHP
+    </label>
+    <br>
+ 
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+    <label class="form-check-label1" for="defaultChec2">
+ JAVA
+    </label>
+    <br>
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+    <label class="form-check-label1" for="defaultCheck3" >
+ HTML
+    </label>
+<br>
+<input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+<label class="form-check-label1" for="defaultCheck4" >
+CSS
+</label>
+<br>
+<input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+<label class="form-check-label1" for="defaultCheck5" >
+BOOSTRAP
+</label>
+
+
+
+
+</div>
+
+<br>
 
  <br/>
- <input type ="radio" name="gender" value="male" >male
- <input type="radio" name="gender" value ="female">female
+ <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2">
+    <label class="form-check-label" for="exampleRadios1">
+     Male
+    </label>
+  </div>
+<div class="form-check">
+<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+<label class="form-check-label" for="exampleRadios2">
+         Female
+</label>
+</div>
+<br>
  <br/>
  <br/>
-<select>
+<select class="form-control">
 <option value ="news " selected>News</option>
 <option value ="sports " >sports</option>
 <option value ="music " >Music</option>
@@ -52,12 +93,18 @@
 </select>
 <br/>
 <br/>
-<textarea rows="30" cols="40">
-        text(par defaut)
+<textarea rows="30" cols="40" class="form-control1" name="txt">
+    Pour vivre heureux avec peu de moyens,
+    pour rechercher l'élégance plutôt que le luxe,
+     et le raffinement plutôt que la mode; pour être épanoui plutôt que respectable, 
+     avoir une richesse intérieure et non une richesse pécuniaire; pour étudier dur, penser calmement, parler gentiment, agir franchement; pour supporter tout avec douceur,
+     faire tout bravement, attendre les occasions, ne jamais se presser. En d'autres termes,
+     laisser le spirituel, sans attache et sans conscience, grandir au travers du commun.
+
         </textarea>
         <br/><br/>
-        <input type="submit" value="Envoyer" />
-        <input type="reset" value="effacer"/>
+        <input type="submit" value="Envoyer" class="btn2 btn-success"/>
+        <input type="reset" value="effacer" class="btn2 btn-danger "/>
         
  </form>
 

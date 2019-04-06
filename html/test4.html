@@ -6,13 +6,32 @@
         <link rel="stylesheet" href="../css/style.css"/>
         <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     </head>
-    <body>
+    <body class="color">
      
 <script src="../JS/ctrl.js"></script>
 
 <form name="form1">
 
-<input name="btClic" type="button" value="Cliquer ici" onclick="message();"/>
+<input name="btClic" type="button" value="Cliquer ici" onclick="message();" class="btn3 btn-success" />
+</form>
+<br>
+<form name="form2" method="POST" action="../php/test4.php">
+<h2>Ecrire votre nom:</h2>
+<input type="text" name="txtNom" class="form-control"/>
+<input name="btClic2" type="button" value="Cliquer ici" onclick="message2(document.form2.txtNom);"class="btn3 btn-info" />
+</form>
+<br>
+<form name="form3" method="POST" action="../php/test4.php">
+<h3>Saisir un Nombre:</h3>
+<input name="txtN" type="text" size="5" class="form-control" name="nombre"/>
+<input name="btClic3" type="button" value="Cliquer ici" onclick="document.form3.txtR.value=carre(document.form3.txtN);" class="btn3 btn-danger"/>
+<br>
+<br>
+<h1>  Le carré de ce nombre est:</h1>
+<input name="txtR" type="text" size="10" readonly class="form-control"/>
+</form>
+
+
 
 
 </form>
